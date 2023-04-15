@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liver Disease Prediction</title>
+  </head>
+  <style>
+     body{
+      background-color: rgb(146, 186, 247);
+      margin: 0%;
+    }
+    header {
+  
+background-color: rgb(95, 95, 252);
+  height: 30px;
+  padding-top: 6px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+  
+}
+.q{
+  text-align: center;
+  font-size: 17px;
+  margin-top: 3px;
+  color: azure;
+}
+
+
+nav li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li a img {
+  height: 24px;
+}
+.header-links{
+  display: inline-flexbox;
+  margin-left: 650px;
+}
+#w{
+  color: azure;
+
+}
+#w:hover{
+  color: black;
+  transform: scale(1.2);
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+button[type="submit"] {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.fa {
+  font-size: 18px;
+}
+.qwe{
+  height: 30px;
+  background-color: azure;
+  box-shadow: 1px 5px 20px black;
+}
+#po{
+  margin-left: 100px;
+  color: blue;
+  font-weight: bolder;
+}
+#po:hover{
+  color: black;
+  transform: scale(1.5);
+}
+    h1{
+      background-color: greenyellow;
+      height: 50px;
+      font-size: 40px;
+      text-align: center;
+    }
+    form{
+      width: 600px;
+      height: 440px;
+      margin-left: 370px;
+      border: 2px solid black;
+      box-shadow: 3px 3px 10px black;
+      background-color: azure;
+    }
+    label{
+      font-size: 20px;
+      background-color: transparent;
+      color: green;
+      font-weight: bolder;
+      margin-left: 20px;
+    }
+    input{
+      width: 200px;
+      height: 20px;
+      border: 2px solid black;
+      background-color: antiquewhite;
+      margin-left: 70px;
+      
+    }
+    #gender{
+      border: 2px solid black;
+      margin-left: 70px;
+      width: 208px;
+      box-shadow: 1px 1px 4px black;
+      height: 26px;
+    }
+    tr{
+      padding: 10px;
+    }
+    #poi{
+      
+      cursor: pointer;
+      border: 2px solid black;
+      border: 2px solid green;
+      font-size: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-radius: 100px;
+      margin-top: 30px;
+      margin-left: 0px;
+      width: 600px;
+      height: 50px;
+      background-color: yellow;
+    }
+    #age{
+      margin-top: 4px;
+      border: 1px solid black;
+      margin-left: 300px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 4px black;
+    }
+    #gender{
+      margin-left: 270px;
+      border-radius: 5px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+    }
+    #tb{
+      margin-left: 208px;
+      border-radius: 5px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+    }
+    #db{
+      margin-left: 198px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+      border-radius: 5px;
+    }
+    #ap{
+      margin-left: 149px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+      border-radius: 5px;
+    }
+    #aa1{
+      margin-left: 104px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+      border-radius: 5px;
+    }
+    #aa2{
+      margin-left: 92px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+      border-radius: 5px;
+    }
+    #tp{
+      margin-left: 214px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+      border-radius: 5px;
+    }
+    #a{
+      margin-left: 258px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 4px black;
+      border-radius: 5px;
+    }
+    #agr{
+      margin-left: 87px;
+      box-shadow: 1px 1px 4px black;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    #foot{
+  margin-top: 100px;
+  float: left;
+  height: 300px;
+  background-color: black;
+  width: 100%;
+  color: blue;
+}
+li{
+  float: left;
+  margin-left: 150px;
+  font-size: 20px;
+  list-style: none;
+  
+}
+li:hover{
+  transform: scale(1.5);
+}
+h4{
+  font-size: 30px;
+  text-decoration: underline;
+  
+}
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="q">Follow Us On Social Media</li>
+          <li class="social-links"><a href="#"><img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram"></a></li>
+          <li class="social-links"><a href="#"><img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter"></a></li>
+          <li class="social-links"><a href="#"><img src="https://www.facebook.com/favicon.ico" alt="Facebook"></a></li>
+          <li class="header-links"><a id="w" href="#">Privacy Policy</a></li>
+          <li><a id="w" href="#">Disclaimer</a></li>
+          <li ><a id="w" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <img class="p" src="{{url_for('static',filename='finhos.png')}}">
+    <header class="qwe">
+      <nav class="wer">
+        <ul class="ert">
+          <li><a id="po" href="">PATIENT CARE</a></li>
+          <li><a id="po" href="">HEALTH INFORMATION</a></li>
+          <li><a id="po" href="">HOSPITALS</a></li>
+          <li><a id="po" href="">ACADAMICS & RESEARCH</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Liver Disease Prediction</h1>
+    <form action="/data_predict" method="POST">
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age"><br><br>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+      </select><br><br>
+      
+      <label for="tb">Total Bilirubin:</label>
+      <input type="text" id="tb" name="tb"><br><br>
+      
+      <label for="db">Direct Bilirubin:</label>
+      <input type="text" id="db" name="db"><br><br>
+      
+      <label for="ap">Alkaline Phosphotase:</label>
+      <input type="text" id="ap" name="ap"><br><br>
+      
+      <label for="aa1">Alamine Aminotransferase:</label>
+      <input type="text" id="aa1" name="aa1"><br><br>
+      
+      <label for="aa2">Aspartate Aminotransferase:</label>
+      <input type="text" id="aa2" name="aa2"><br><br>
+      
+      <label for="tp">Total Protiens:</label>
+      <input type="text" id="tp" name="tp"><br><br>
+      
+      <label for="a">Albumin:</label>
+      <input type="text" id="a" name="a"><br><br>
+      
+      <label for="agr">Albumin and Globulin Ratio:</label>
+      <input type="text" id="agr" name="agr"><br><br>
+      
+      <input id="poi" type="submit" value="prediction">
+    </form>
+    <div id="foot">
+      <ul class="foo">
+        <li><h4>Address :</h4><br>SRK Main Road , Shengottai<br> 627809 , <br>Tamil Nadu , India .</li>
+        <li><h4>EMAIL :</h4><br> akhospitals@gmail.com</li>
+        <li><h4>Help - Toll Free :</h4><br> 1-8000-3002-8989 </li>
+      </ul>
+      </div>
+      
+  </body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <style>
+    body{
+      background-color: rgb(146, 186, 247);
+      margin: 0%;
+    }
+    header {
+  
+background-color: rgb(95, 95, 252);
+  height: 30px;
+  padding-top: 6px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+  
+}
+.q{
+  text-align: center;
+  font-size: 17px;
+  margin-top: 3px;
+  color: azure;
+}
+
+
+nav li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li a img {
+  height: 24px;
+}
+.header-links{
+  display: inline-flexbox;
+  margin-left: 650px;
+}
+#w{
+  color: azure;
+
+}
+#w:hover{
+  color: black;
+  transform: scale(1.2);
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+button[type="submit"] {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.fa {
+  font-size: 18px;
+}
+.qwe{
+  height: 30px;
+  background-color: azure;
+  box-shadow: 1px 5px 20px black;
+}
+#po{
+  margin-left: 100px;
+  color: blue;
+  font-weight: bolder;
+}
+#po:hover{
+  color: black;
+  transform: scale(1.5);
+}
+.o{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(8, 7, 7, 0.637);
+}
+.imt{
+  text-align: center;
+  margin-top: 10px;
+  color: orange;
+  font-size: 50px;
+  font-weight: bolder;
+  width: 700px;
+  
+  text-shadow: 2px 2px 5px black;
+}
+.simt{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  width: 700px;
+  padding: 5px;
+  color: azure;
+}
+.but{
+  width: 200px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: gray;
+  margin-left: 250px;
+  margin-top: -10px;
+  text-align: center;
+  font-weight: bolder;
+  color: orange;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+.mnb{
+  background-color: rgba(41, 40, 40, 0.459);
+  padding-bottom: 15px;
+}
+.announcement-container {
+  position: absolute;
+  height: 280px;
+  width: 400px;
+  margin-top: 100px;
+  background-color: azure;
+  border: 2px solid black;
+  overflow: hidden;
+  margin-left: 30px;
+  box-shadow: 5px -5px 10px black;
+}
+
+.announcement {
+  
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+
+}
+
+.announcement span {
+  white-space: nowrap;
+  animation: marquee 1s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+h2{
+  margin-left: 30px;
+	float: left;
+	color: black;
+	background-color: rgb(95, 95, 252);
+	border: 2px solid black;
+  box-shadow: 5px -5px 10px black;
+  text-align: center;
+  text-decoration: underline;
+  height: 80px;
+  width: 400px;
+  
+  
+}
+.txt{
+    width: 850px;
+    margin-top: 30px;
+    
+    float: right;
+    background-color: azure;
+    box-shadow: 3px -3px 10px black;
+    border: 2px solid black;
+}
+.gui{
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#foot{
+  margin-top: 100px;
+  float: left;
+  height: 300px;
+  background-color: black;
+  width: 100%;
+  color: blue;
+}
+li{
+  float: left;
+  margin-left: 150px;
+  font-size: 20px;
+  list-style: none;
+  
+}
+li:hover{
+  transform: scale(1.5);
+}
+h4{
+  font-size: 30px;
+  text-decoration: underline;
+  
+}
+
+
+
+
+
+
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="q">Follow Us On Social Media</li>
+          <li class="social-links"><a href="#"><img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram"></a></li>
+          <li class="social-links"><a href="#"><img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter"></a></li>
+          <li class="social-links"><a href="#"><img src="https://www.facebook.com/favicon.ico" alt="Facebook"></a></li>
+          <li class="header-links"><a id="w" href="#">Privacy Policy</a></li>
+          <li><a id="w" href="#">Disclaimer</a></li>
+          <li ><a id="w" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <img class="p" src="{{url_for('static',filename='finhos.png')}}">
+    <header class="qwe">
+      <nav class="wer">
+        <ul class="ert">
+          <li><a id="po" href="">PATIENT CARE</a></li>
+          <li><a id="po" href="">HEALTH INFORMATION</a></li>
+          <li><a id="po" href="">HOSPITALS</a></li>
+          <li><a id="po" href="">ACADAMICS & RESEARCH</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="lkj">
+      <img class="o" src="{{url_for('static',filename='mount2.png')}}">
+      <div class="mnb"><p class="imt">BE AT THE HIGHEST PEAKS <br>
+      NOT ON HOSPITAL BEDS !</p>
+      <p class="simt">Indroducing AK ProHealthcare, an individualised health plan designed by wrold's best doctors and AI technology only for You..! Predict Your Disease Clickhere^</p>
+    
+  
+    <a href="/predict"><button class="but" >Predict Now</button></a>
+  </div>
+  </div>
+  <h2>NOTIFICATION</h2>
+		<div class="announcement-container">
+			<marquee behavior="scroll" direction="up">
+				
+			  <span class="announcement">Disclaimer : A disclaimer stating that the information provided on the website is not a substitute for professional medical advice or treatment and that visitors should consult a healthcare provider before making any healthcare decisions.
+
+          <br><br><br>Privacy policy: A notification about the website's privacy policy, which outlines how the website collects, uses, and protects visitors' personal information.
+          
+          <br><br><br>Terms of use: A notification about the website's terms of use, which outlines the rules and regulations for using the website and its content.
+          
+          <br><br><br>HIPAA compliance: A notification stating that the website complies with the Health Insurance Portability and Accountability Act (HIPAA), which sets standards for protecting the privacy and security of individuals' health information.
+          
+          <br><br><br>Medical emergency: A notification that the website is not intended for medical emergencies and that visitors should call 911 or their local emergency number for immediate assistance.
+          
+          <br><br><br>Accessibility: A notification that the website is designed to be accessible to individuals with disabilities and that accommodations can be made upon request.</marquee>
+		  </div>
+      <div class="txt">
+        <p class="gui">Welcome to AK Hospital, where your health and well-being is our top priority.
+
+At AK Hospital, we believe that healthcare should be patient-centered, compassionate, and personalized. We offer a wide range of medical services, from routine check-ups to specialized treatments and surgeries, all provided by a team of highly skilled and experienced doctors, nurses, and medical staff.
+
+Our state-of-the-art facilities are equipped with the latest technology and equipment, ensuring that our patients receive the best possible care. We also provide a comfortable and welcoming environment, designed to help you feel at ease during your visit.
+
+At AK Hospital, we understand that healthcare can be expensive, which is why we offer a range of payment options and accept most insurance plans. We are committed to making healthcare accessible and affordable for all our patients.
+
+So, whether you're looking for routine healthcare services or specialized medical treatments, AK Hospital is here to provide you with the best possible care. Contact us today to schedule an appointment or learn more about our services.</p>
+      </div>
+
+      <div id="foot">
+        <ul class="foo">
+          <li><h4>Address :</h4><br>SRK Main Road , Shengottai<br> 627809 , <br>Tamil Nadu , India .</li>
+          <li><h4>EMAIL :</h4><br> akhospitals@gmail.com</li>
+          <li><h4>Help - Toll Free :</h4><br> 1-8000-3002-8989 </li>
+        </ul>
+        </div>
+        
+  </body>
+</html>
